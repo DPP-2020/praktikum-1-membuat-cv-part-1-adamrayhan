@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <style>
-    <body>
+
+    .item1 {grid-area: judul; }
+    .item2 {grid-area: personal info;}
+    .item3 {grid-area: deskripsi; }
+    .item4 {grid-area: achievements; }
+    
 <!-- AWAL  -->
 
 body {
@@ -34,11 +39,49 @@ nav {
     background:darkgray;
     padding: 20px;
 }
-</header>
+
+nav a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: grid;
+}
+
+.content {
+margin-left: 250px;
+padding-left: 20px;
+}
+
 </style>
 </head>
 
+<body>
+<header>
 
+    <div class="nav a">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+    <h2>Curriculum Vitae</h2>
+
+    <div class= "grid-container">
+        <div class="item1">Judul</div>
+        <div class="item2">Personal Info</div>
+        <div class="item3">Deskripsi</div>
+        <div class="item4">Achievements</div>
+    </div>
+</header>
+
+<section>
+    <nav>
+        <ul>
+
+        </ul>
+    </nav>
+</section>
+<article>
+
+</article>
 <!-- Isi Pekerjaanmu Di Sini -->
 
 <!-- AKHIR  -->
