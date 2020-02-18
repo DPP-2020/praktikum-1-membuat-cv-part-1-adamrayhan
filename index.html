@@ -16,48 +16,30 @@
     
 <!-- AWAL  -->
 
-body {
-    font-family: Helvetica;
-}
-
-.sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: auto;
-    top: 0;
-    left: 0;
-    background-color: darkgray;
-    overflow-x: hidden;
-}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
 
-header {
-    background-color: #ff6347;
-    padding: 30px;
-    text-align: center;
-    font-size: 40px;
-    color: white;
-}
-
-nav {
-    float: left;
-    width: 20%;
-    height: 200px;
-    background:darkgray;
-    padding: 20px;
-}
-
-nav a {
-    color: blue;
-    padding: 20px;
-    text-decoration: none;
+.grid-container {
     display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu menu main main main main'
+    'menu menu footer footer footer footer';
+    grid-gap: 10px;
+    background-color: black;
+    padding: 10px;
+
 }
 
-.content {
-margin-left: 250px;
-padding-left: 20px;
+.grid-container > div {
+background-color: blanchedalmond;
+text-align: center;
+padding: 20px 0;
+font-size
 }
 
 </style>
@@ -66,23 +48,19 @@ padding-left: 20px;
 <body>
 <header>
 
-    <div class="sidenav">
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
+    <div class="sidenav b">
+<img src="338538-800w.jpg" alt="Alfina" width="500" height="600">
     </div>
 
-    <div class="nav a">
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
-    </div>
+    
 
     <div class="content">
         <h2>Alfina Shahira Putri</h2>
     </div>
 
-<div class="socmed">
-socmed
-</div>
+    
+
+
 
     
 </header>
